@@ -1,16 +1,15 @@
-# recipe_app_frontend
+# Recipe App Frontend (Flutter)
 
-A new Flutter project.
+- Ocean Professional theme (blue primary, amber secondary)
+- Fetches FastAPI backend:
+  - GET /health
+  - GET /recipes?q=&page=&page_size=
+  - GET /recipes/{id}
 
-## Getting Started
+Configure backend base URL via:
+- Dart define: --dart-define=API_BASE_URL=https://your-backend
+- Defaults to the provided backend preview URL.
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Run:
+flutter pub get
+flutter run --dart-define=API_BASE_URL=https://vscode-internal-26723-beta.beta01.cloud.kavia.ai:3001
