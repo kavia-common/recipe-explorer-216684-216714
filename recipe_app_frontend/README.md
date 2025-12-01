@@ -8,8 +8,11 @@
 
 Configure backend base URL via:
 - Dart define: --dart-define=API_BASE_URL=https://your-backend
-- Defaults to the provided backend preview URL.
+- Defaults to http://localhost:3001 for local development.
 
 Run:
 flutter pub get
+# Local backend default (no define needed)
+flutter run
+# Or point to a remote backend
 flutter run --dart-define=API_BASE_URL=https://vscode-internal-26723-beta.beta01.cloud.kavia.ai:3001
